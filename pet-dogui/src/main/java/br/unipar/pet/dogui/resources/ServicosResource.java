@@ -3,11 +3,8 @@ package br.unipar.pet.dogui.resources;
 import br.unipar.pet.dogui.model.ErroValidacao;
 import br.unipar.pet.dogui.model.Servico;
 import br.unipar.pet.dogui.service.ServicoService;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
-import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -103,11 +100,35 @@ public class ServicosResource {
     
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response findAll(@QueryParam("id") int id, 
-            @QueryParam("descricao") String descricao,
-            @QueryParam("valorMaiorQue") Double vlMaiorQue) {
-        //localhost:8080/pet-dogui/servico?descricao=tosa
+    public Response findAll() {
+        try {
+            
+            ServicoService service = new ServicoService();
+            return Response.ok(service.findByAll()).build();
+            
+        } catch (Exception ex) {
+            return Response.serverError().entity(
+                new ErroValidacao(ex.getMessage())).build();
+        }
         
     }
+    
+    @GET
+    @Path("filter")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response findAllWithParameters(@QueryParam("descricao") String descricao) {
+        
+        try {
+            
+            ServicoService service = new ServicoService();
+            return Response.ok(service.findWithParameteres(descricao)).build();
+            
+        } catch (Exception ex) {
+            return Response.serverError().entity(
+                new ErroValidacao(ex.getMessage())).build();
+        }
+        
+    }
+    
     
 }

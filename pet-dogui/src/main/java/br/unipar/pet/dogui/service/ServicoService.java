@@ -6,6 +6,7 @@ package br.unipar.pet.dogui.service;
 
 import br.unipar.pet.dogui.model.Servico;
 import br.unipar.pet.dogui.service.repository.ServicoRepository;
+import java.util.ArrayList;
 import javax.ws.rs.core.Response;
 
 /**
@@ -53,9 +54,21 @@ public class ServicoService {
     
     }
 
-    public Servico findById(int id) {
+    public Servico findById(int id)  throws Exception {
     
         return repository.findById(id);
+        
+    }
+    
+    public ArrayList<Servico> findByAll()  throws Exception {
+    
+        return repository.findAll();
+        
+    }
+    
+    public ArrayList<Servico> findWithParameteres(String descricao)  throws Exception {
+    
+        return repository.findWithParameters(descricao);
         
     }
     
