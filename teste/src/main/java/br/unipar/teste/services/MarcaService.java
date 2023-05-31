@@ -81,7 +81,7 @@ public class MarcaService {
 	
 	private void validarMarca(Marca marca) throws Exception {
 		
-		if (marca.getNome() == null ||
+		/*if (marca.getNome() == null ||
 			marca.getNome().isBlank() || 
 			marca.getNome().isEmpty()) {
 			throw new Exception("Descricao da Marca Não pode ser vazia");
@@ -90,6 +90,7 @@ public class MarcaService {
 		if (marca.getNome().length() > 255) {
 			throw new Exception("Tamanho da Descrição deve ser menor que 255 caracteres");
 		}
+		*/
 		
 	}
 	
