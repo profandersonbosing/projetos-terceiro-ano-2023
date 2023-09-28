@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Revisão Terceiro Bimestre</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center">Revisão Web Terceiro Bimestre</h1>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="#table" class="colorhover">Exemplo de Tabela</a></li>
+          <li><a href="#footer" class="colorhover">Exemplo de Footer</a></li>
+          <li><a href="#form" class="colorhover">Exemplo de Form</a></li>
+          <li>
+            <a href="#googlemaps" class="colorhover">Exemplo de Google Maps</a>
+          </li>
+          <li>
+            <a href="#tituloexemplo" class="colorhover">Exemplos de Titulos</a>
+          </li>
+          <li>
+            <a href="#paragrafoexemplo" class="colorhover"
+              >Exemplos de Paragrafo</a
+            >
+          </li>
+          <li>
+            <a href="#formatacaoexemplo" class="colorhover"
+              >Exemplos de Formatação</a
+            >
+          </li>
+          <li>
+            <a href="#formatacaocodigo" class="colorhover">Exemplo de Código</a>
+          </li>
+          <li>
+            <a href="#citacaoexemplo" class="colorhover">Exemplo de Citação</a>
+          </li>
+          <li>
+            <a href="#inversaoexemplo" class="colorhover"
+              >Exemplo de Inversao de Texto</a
+            >
+          </li>
+          <li>
+            <a href="#definicaoexemplo" class="colorhover"
+              >Exemplo de Lista de Definições</a
+            >
+          </li>
+          <li>
+            <a href="#imagemexemplo" class="colorhover">Exemplo de Imagem</a>
+          </li>
+          <li>
+            <a href="#audioexemplo" class="colorhover">Exemplo de Audio</a>
+          </li>
+          <li>
+            <a href="#videoexemplo" class="colorhover">Exemplo de Video</a>
+          </li>
+          <li>
+            <a
+              href="./venda/index.html"
+              target="_blank"
+              class="colorhover"
+              >Exemplo de Pagina de Venda com Boostrap</a
+            >
+          </li>
+          <li>
+          <a
+            href="./boostrap/index.html"
+            target="_blank"
+            class="colorhover"
+            >Exemplos com Boostrap</a
+          >
+        </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <table id="table">
+        <caption>
+          Caption da Tabela
+        </caption>
+
+        <thead>
+          <tr>
+            <th>Plano</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Padrão</td>
+            <td>R$50.00</td>
+          </tr>
+          <tr>
+            <td>Plus</td>
+            <td>R$100.00</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>R$150.00</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td><button>Contratar</button></td>
+            <td><button>Contratar</button></td>
+          </tr>
+        </tfoot>
+      </table>
+      <hr />
+      <form id="form" action="enviardados">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          Nome: <br />
+          <input type="text" name="nome" /> <br />
+          Idade: <br />
+          <input type="number" name="idade" />
+        </fieldset>
+        <br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </form>
+      <hr />
+      <div id="tituloexemplo">
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+      </div>
+      <hr />
+      <p id="paragrafoexemplo">Paragrafo</p>
+      <hr />
+      <div id="formatacaoexemplo">
+        <strong>Lorem ipsum dolor</strong> <em>sit amet consectetur</em>,
+        adipisicing elit. Delectus natus
+        <mark>nostrum animi nulla sed officia</mark> ipsa reprehenderit rerum
+        eos, distinctio <del>ratione quo quam consequatur</del> id vitae
+        <ins>quisquam dolore a odio</ins>. Voluptatum eos tenetur neque unde
+        commodi. Officia <sup>temporibus</sup> dolorem delectus in corrupti
+        rerum consequatur mollitia <sub>veritatis</sub> doloremque laborum
+        inventore nesciunt voluptatum maxime voluptatem, neque id ullam? Esse id
+        molestiae alias?
+      </div>
+      <hr />
+      <div id="formatacaocodigo">
+        <code>
+          @ExceptionHandler(Exception.class) <br />
+          @ResponseStatus(HttpStatus.BAD_REQUEST) <br />
+          public ApiErrorMessage handleException(Exception ex) { <br />
+          return new ApiErrorMessage(ex.getMessage()); <br />
+          } <br />
+        </code>
+      </div>
+      <hr />
+      <div id="citacaoexemplo">
+        <q
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          harum nulla voluptatem quisquam a molestias cupiditate perspiciatis
+          laborum quos adipisci aliquid quibusdam fuga debitis inventore facilis
+          voluptate delectus, eligendi obcaecati!</q
+        >
+        <blockquote>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+          cupiditate quasi. Laudantium rem aut minus deserunt non a, dolorum
+          laboriosam facilis iste quidem impedit natus velit voluptate? Harum,
+          deleniti praesentium?
+        </blockquote>
+      </div>
+      <hr />
+      <div id="abreviacaoexemplo">
+        <p><abbr title="Ex.">Exemplo</abbr> de Abreviação</p>
+      </div>
+      <hr />
+      <div id="inversaoexemplo">
+        <p>
+          <bdo dir="rtl">da direita para a esquerda</bdo> rtl = da direita para
+          a esquerda (right-to-left)
+        </p>
+        <p>
+          <bdo dir="ltr">da esquerda para a direita</bdo> ltr = da esquerda para
+          a direita (left-to-right)
+        </p>
+      </div>
+      <hr />
+      <div id="definicaoexemplo">
+        <dl>
+          <dt>HTML</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, hic
+            deserunt quos quas voluptatem saepe! In veniam officia quos dicta.
+            Adipisci est nisi nemo, voluptatum debitis fuga non optio corporis?
+          </dd>
+          <dt>CSS</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, hic
+            deserunt quos quas voluptatem saepe! In veniam officia quos dicta.
+            Adipisci est nisi nemo, voluptatum debitis fuga non optio corporis?
+          </dd>
+        </dl>
+      </div>
+      <hr />
+      <div id="imagemexemplo">
+        <figure class="text-center">
+          <img src="./img/25231.png" alt="Imagem da Logo do Github" />
+          <figcaption>Imagem da Logo do Github</figcaption>
+        </figure>
+      </div>
+      <hr />
+      <div id="videoexemplo" class="text-center">
+        <video poster="./img/25231.png" width="300px" controls>
+          <source src="video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <hr />
+      <div id="audioexemplo" class="text-center">
+        <audio preload="metadata" controls autoplay loop>
+          <source src="audio.mp3" type="audio/mp3" />
+        </audio>
+      </div>
+      <hr />
+    </main>
+    <footer id="footer" class="text-center">
+      <h2>Contato</h2>
+      <a href="https://github.com/profandersonbosing/" target="_blank">
+        <img src="./img/25231.png" alt="Imagem da Logo do Github" width="50" />
+      </a>
+      <address>
+        Telefone:
+        <a href="tel:4599954688789798">(45) 4764465<del>665465</del></a>
+        <br />
+        <ins>Rua: Manoel Ribas</ins>, N <sup>0</sup> 897,
+        <strong>Umuarama</strong> - <mark>PR</mark>
+      </address>
+      <iframe
+        id="googlemaps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7303.486196026114!2d-53.31037612229004!3d-23.756538899999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f2d3fe3531d1b7%3A0x596ddf0a64d66bdd!2sUNIPAR%20-%20Universidade%20Paranaense%20-%20Campus%20Sede!5e0!3m2!1spt-BR!2sbr!4v1695856242507!5m2!1spt-BR!2sbr"
+        width="600"
+        height="100"
+        style="border: 0; margin: 10px; border-radius: 5%"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+  </body>
+</html>

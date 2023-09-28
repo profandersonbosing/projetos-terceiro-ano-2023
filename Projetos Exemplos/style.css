@@ -1,0 +1,48 @@
+/*Seletor de Classe*/
+.text-center {
+  text-align: center;
+}
+
+/*Seletor de Elemento*/
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+/*Força as linhas a serem inline*/
+li {
+  /*https://developer.mozilla.org/pt-BR/docs/Web/CSS/display*/
+  display: inline-block;
+  margin: 5px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    border-radius: 50%;
+}
+
+/*Seletor de classe com pseudo classe do css de evento hover*/
+.colorhover:hover {
+    background-color: rgb(198, 255, 220);
+}
+
+
+/*Adiciona borda aos elementos*/
+table, th, td, tr {
+  border: 1px solid black;
+}
+
+/*Alinha a tabela ao centro*/
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {  
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
+
